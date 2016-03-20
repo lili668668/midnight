@@ -1,12 +1,44 @@
 body {
-	background-color: black;
+	background-image: url('../public/bg.jpg');
+	background-size：contain;
+		background-position: center;
+	background-attachment: fixed;
 }
-
 h1, h2, h3, h4, h5, h6, p {
 	color: white;
 }
+.title{
+
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.title > img{
+	width: 100%;
+}
+#imgs{
+	margin: 10px auto;
+	width: 60vw;
+}
+.img {
+ 	/* margin: 5px 5px;  */
+ 	width: 15vw; 
+ 	height: 15vw;
+ 	overflow:hidden;
+ 	box-sizing: border-box;
+ 	padding: 8px;
+ 	overflow: hidden;
+}
+.img > img{
+	min-width: 15vw;
+	min-height: 15vw; 
+}
 
 .after-click {
-	min-height: 30em;
-	min-width: 30em;
+	width: 60vw;
+	height: 60vw;
+}
+.after-click > img {
+	min-width: 100%;
+	min-height: 100%;
 }
