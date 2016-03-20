@@ -1,7 +1,6 @@
 $(function(){
 	var $grid = $('#imgs').masonry({
 				itemSelector: '.img',
-				columnWidth: 400,
 				animate: true
 			});
 			

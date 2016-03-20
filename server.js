@@ -10,6 +10,7 @@ var server = http.createServer(app);
 
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
+app.use('/public', express.static('public'));
 
 app.use( bodyparser.json() );
 app.use( bodyparser.urlencoded({
@@ -28,7 +29,7 @@ request({
         var messages = JSON.parse(body).messages;
         for (var cnt = 0;cnt < messages.length;cnt++) {
             if (messages[cnt].file) {
-                var img = '<img class="img" src="' + messages[cnt].file.thumb_360 + '">';
+                var img = '<div class="img"><img src="' + messages[cnt].file.thumb_360 + '"></div>';
                 $("#imgs").append(img);
             }
         }
