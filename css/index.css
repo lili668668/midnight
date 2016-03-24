@@ -13,8 +13,13 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0 auto;
 	margin-top: 15%;
 }
-.title > img{
+.title-img{
 	width: 100%;
+}
+.subtitle-img{
+	width: 100%;
+	position: relative;
+	top: -30%;
 }
 #imgs{
 	margin: 10px auto;
