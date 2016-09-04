@@ -4,7 +4,7 @@ $(function(){
         url : 'img_paths.json',
         dataType : 'json',
         success : function( data ) {
-            for (var cnt = 0;cnt < data["paths"].length;cnt++) {
+            for (var cnt = data["paths"].length - 1;cnt >= 0;cnt--) {
                 var img = '<div class="img"><img src="' + baseurl + data["paths"][cnt] + '"></div>';
                 $("#imgs").append(img);
             }
