@@ -5,9 +5,12 @@ $(function(){
         dataType : 'json',
         success : function( data ) {
             for (var cnt = 0;cnt < data["paths"].length;cnt++) {
-                var img = '<div class="img"><img src="' + baseurl + data["paths"][cnt] + '"></div>';
+                var img = '<div class="img"><img class="lazyload" data-original="' + baseurl + data["paths"][cnt] + '"></div>';
                 $("#imgs").append(img);
             }
+            
+            $("img.lazyload").lazyload();
+
             var $grid = $('#imgs').masonry({
 				itemSelector: '.img',
 				animate: true
